@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <form action="">
+    <form action="example.html" method="get">
       <p>first name</p>
       <label for="firstname">first name (label)</label>
-      <input type="text" id="firstname" name="fName" placeholder="First Name" />
+      <input
+        type="text"
+        id="firstname"
+        name="fName"
+        placeholder="First Name"
+        required
+      />
       <br />
       <br />
       <label for="">Password</label>
-      <input type="Password" name="password" id="password" />
+      <input type="Password" name="password" id="password" required />
       <br />
       <br />
       <br />
@@ -32,6 +38,38 @@
         <label for="JS">JS</label>
         <input type="radio" id="JS" name="fav_language" value="JS" />
       </div>
+
+      <div>
+        <h2>CheckBox</h2>
+        <label for="Yellow">Yellow</label>
+        <input type="checkbox" name="yellow" id="Yellow" value="yellow" />
+        <br />
+        <label for="Blue">Blue</label>
+        <input type="checkbox" name="Blue" id="Blue" value="Blue" />
+        <br />
+        <label for="Green">Green</label>
+        <input type="checkbox" name="Green" id="Green" value="Green" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="favColors">Colors</label>
+        <input type="color" name="favcolors" id="favColors" />
+        <br />
+        <br />
+        <label for="">Date : </label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
