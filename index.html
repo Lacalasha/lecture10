@@ -7,69 +7,87 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <form action="example.html" method="get">
-      <p>first name</p>
-      <label for="firstname">first name (label)</label>
-      <input
-        type="text"
-        id="firstname"
-        name="fName"
-        placeholder="First Name"
-        required
-      />
-      <br />
-      <br />
-      <label for="">Password</label>
-      <input type="Password" name="password" id="password" required />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div>
-        <h4>choose your fav</h4>
-        <label for="html">HTML</label>
-        <input type="radio" name="fav_language" id="html" value="HTML" />
-        <br />
-        <br />
-        <label for="CSS">CSS</label>
-        <input type="radio" id="CSS" name="fav_language" value="CSS" />
-        <br />
-        <br />
-        <label for="JS">JS</label>
-        <input type="radio" id="JS" name="fav_language" value="JS" />
+    <main class="page-wrapper">
+      <div class="form-container">
+        <h1>Contact Form</h1>
+        <form action="example.html" method="get">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="enter your password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="date"> Date</label>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <div class="form-group">
+            <label for="sub">
+              <input type="checkbox" name="sub" id="sub" />
+              sub on our news
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <label for="male">
+              <input type="radio" name="gender" id="male" value="1" /> Male
+            </label>
+            <label for="female">
+              <input type="radio" name="gender" id="female" value="2" /> Female
+            </label>
+            <label for="attack">
+              <input type="radio" name="gender" id="attack" value="3" /> Attack
+              Helicopter
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required>
+              <option value="">Select Object</option>
+              <option value="Sales">Sales</option>
+              <option value="Bussiness">Bussiness</option>
+              <option value="Support">Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="write your text"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group form-btm">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
       </div>
-
-      <div>
-        <h2>CheckBox</h2>
-        <label for="Yellow">Yellow</label>
-        <input type="checkbox" name="yellow" id="Yellow" value="yellow" />
-        <br />
-        <label for="Blue">Blue</label>
-        <input type="checkbox" name="Blue" id="Blue" value="Blue" />
-        <br />
-        <label for="Green">Green</label>
-        <input type="checkbox" name="Green" id="Green" value="Green" />
-      </div>
-      <br />
-      <br />
-      <div>
-        <label for="favColors">Colors</label>
-        <input type="color" name="favcolors" id="favColors" />
-        <br />
-        <br />
-        <label for="">Date : </label>
-        <input type="date" name="birthday" id="birthday" />
-      </div>
-      <br />
-
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
-        <br />
-        <label for="tel">Telephone</label>
-        <input type="tel" name="tel" id="tel" />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    </main>
   </body>
 </html>

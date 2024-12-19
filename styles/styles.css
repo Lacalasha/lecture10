@@ -6,3 +6,65 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+  padding: 20px;
+}
+.page-wrapper .form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.page-wrapper .form-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+.form-group input [type="data"] {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: lightseagreen;
+  border-style: none;
+  border-radius: 4px;
+  color: white;
+}
+.form-container .form-btm {
+  display: flex;
+  justify-content: space-between;
+}
+.form-container .form-btm button {
+  cursor: pointer;
+}
